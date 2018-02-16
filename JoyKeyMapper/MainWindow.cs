@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.IO;
-using System.Reflection;
 using System.Windows.Forms;
 
 namespace JoyKeyMapper
@@ -98,13 +95,10 @@ namespace JoyKeyMapper
                 this.WindowState = FormWindowState.Normal;
         }
 
-        private void JoyKeyMapperToolStripMenuItem_Click(object sender, EventArgs e)
+        private void joyKeyMapperToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string title = ((AssemblyTitleAttribute)(Assembly.GetExecutingAssembly().GetCustomAttributes(typeof(AssemblyTitleAttribute), false))[0]).Title;
-            string copyright = ((AssemblyCopyrightAttribute)(Assembly.GetExecutingAssembly().GetCustomAttributes(typeof(AssemblyCopyrightAttribute), false))[0]).Copyright;
-            string test = ((AssemblyDescriptionAttribute)(Assembly.GetExecutingAssembly().GetCustomAttributes(typeof(AssemblyDescriptionAttribute), false))[0]).Description;
-            string Version = Assembly.GetExecutingAssembly().GetName().Version.ToString();
-
+            AboutWindow aboutWindow = new AboutWindow();
+            aboutWindow.ShowDialog();
         }
     }
 }
