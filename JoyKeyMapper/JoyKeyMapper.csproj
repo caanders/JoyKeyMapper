@@ -130,6 +130,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutWindow.Designer.cs">
+      <DependentUpon>AboutWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="ActionStatus.cs" />
     <Compile Include="ConfigController.cs" />
     <Compile Include="ConfigWindow.cs">
@@ -150,6 +156,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RunStatus.cs" />
     <Compile Include="StringArrayComparer.cs" />
+    <EmbeddedResource Include="AboutWindow.resx">
+      <DependentUpon>AboutWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConfigWindow.resx">
       <DependentUpon>ConfigWindow.cs</DependentUpon>
     </EmbeddedResource>
