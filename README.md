@@ -23,7 +23,7 @@ To add one or more button mappings press "Read Button".
 Press one or more buttons on your joystick. Then press "Read Button" again to obtain the input.
 
 ![config](https://github.com/caanders/JoyKeyMapper/blob/docs/docs/config3.PNG)
-All new and existing entries for pressed buttons are selected.
+<br>All new and existing entries for pressed buttons are selected.
 
 Press "Read Keys" and press any key combination. Make sure to press on key after the other. Otherwise windows will repeat key presses which will be recognized as many single key presses.
 
@@ -42,7 +42,7 @@ To start the mapping of configured buttons press "Start/Stop Mapping" on the mai
 ![mainscreen](https://github.com/caanders/JoyKeyMapper/blob/docs/docs/mainscreen2.PNG)
 
 Two User Options are availabe:
-* minimize to tray
+* minimize to tray<br>
   minimizing to tray instead of task bar
-* auto startup
+* auto startup<br>
   after starting the application, mapping ist started automatically
