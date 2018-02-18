@@ -3,6 +3,8 @@
 ###### JoyKeyMapper is a small C#-based tool for mapping joystick buttons to keyboard inputs.
 ###### Setup of mappings is done in a configuration window.
 
+[Latest Release](https://github.com/caanders/JoyKeyMapper/releases/latest)
+
 ### Installation
 Simply download the current version of JoyKeyMapper, unpack the archive to a location of your choice and run JoyKeyMapper.exe.
 In case any application is not receiving key presses try running JoyKeyMapper as administrator.
