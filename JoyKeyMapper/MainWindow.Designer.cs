@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            JoyKeyMapper.Properties.Settings settings1 = new JoyKeyMapper.Properties.Settings();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.StartStopButton = new System.Windows.Forms.Button();
             this.StatusBox = new System.Windows.Forms.TextBox();
@@ -79,11 +78,8 @@
             // minimizeChecker
             // 
             this.minimizeChecker.AutoSize = true;
-            settings1.autoStartup = false;
-            settings1.minimizeTray = false;
-            settings1.SettingsKey = "";
-            this.minimizeChecker.Checked = settings1.minimizeTray;
-            this.minimizeChecker.DataBindings.Add(new System.Windows.Forms.Binding("Checked", settings1, "minimizeTray", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.minimizeChecker.Checked = global::JoyKeyMapper.Properties.Settings.Default.minimizeTray;
+            this.minimizeChecker.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::JoyKeyMapper.Properties.Settings.Default, "minimizeTray", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.minimizeChecker.Location = new System.Drawing.Point(148, 60);
             this.minimizeChecker.Name = "minimizeChecker";
             this.minimizeChecker.Size = new System.Drawing.Size(97, 17);
@@ -94,8 +90,8 @@
             // startupChecker
             // 
             this.startupChecker.AutoSize = true;
-            this.startupChecker.Checked = settings1.autoStartup;
-            this.startupChecker.DataBindings.Add(new System.Windows.Forms.Binding("Checked", settings1, "autoStartup", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.startupChecker.Checked = global::JoyKeyMapper.Properties.Settings.Default.autoStartup;
+            this.startupChecker.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::JoyKeyMapper.Properties.Settings.Default, "autoStartup", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.startupChecker.Location = new System.Drawing.Point(148, 83);
             this.startupChecker.Name = "startupChecker";
             this.startupChecker.Size = new System.Drawing.Size(82, 17);
